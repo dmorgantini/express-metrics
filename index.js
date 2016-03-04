@@ -44,7 +44,7 @@ module.exports = function expressMetrics(options) {
 
 module.exports.listen = function listen(port) {
   if (builder.getServer()) {
-    return builder.getMetricsServer();
+    return builder.getServer();
   }
 
   return builder.startServer(port);
